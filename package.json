@@ -4,6 +4,7 @@
   "description": "Cualquier cosa, esto es de prueba",
   "main": "index.js",
   "scripts": {
+    "deploy": "gh-pages -d dist",
     "start": "npx parcel src/index.html",
     "fallos": "npx stylelint src/css/cover.css --fix"
   },
