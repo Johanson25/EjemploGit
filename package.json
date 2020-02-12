@@ -4,6 +4,7 @@
   "description": "Cualquier cosa, esto es de prueba",
   "main": "index.js",
   "scripts": {
+    "predeploy": "rm -rf dist && parcel build src/index.html --no-source-maps --public-url ./",
     "deploy": "gh-pages -d dist",
     "start": "npx parcel src/index.html",
     "fallos": "npx stylelint src/css/cover.css --fix"
